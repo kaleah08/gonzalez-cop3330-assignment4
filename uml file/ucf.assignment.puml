@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class HelloApplication
+abstract HelloController
+
+
+HelloController <|-- HelloApplication
+Collection <|-- AbstractCollection
+
+class HelloApplication {
+start(){
+fxmlLoader
+scene
+stage.setTitle
+stage.setScene
+stage.show
+}
+
+addList(list){}
+addItem(list){}
+removeItem(list){}
+removeList(list){}
+editList(list){}
+displayItems(list){}
+displayList(list){}
+markItem(list){}
+load(list){}
+saveToFile(list, file name){}
+
+}
+
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+
+@enduml
